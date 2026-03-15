@@ -4,6 +4,8 @@ author: "John NG"
 format:
   html:
     toc: true
+    theme: cosmo
+    number-sections: true
 editor: visual
 ---
 
