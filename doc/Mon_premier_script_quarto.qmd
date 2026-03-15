@@ -1,0 +1,108 @@
+---
+title: "Mon_premier_script_R"
+author: "John_NG"
+format:
+  html:
+    toc: true
+editor: visual
+---
+
+## Introduction
+
+This is an introductory **paragraph** to get started with *Quarto*
+
+The advantage do *Quarto* si that it allows better ***reproducibility***, ***reuse***, and ***sharing*** of `R` code in `RStudio`.
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see [quarto.org](https://quarto.org){target="_blanck"}.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+10 - 5
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 / 2
+10 * 10
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
+
+## Ajout d'un média
+
+![Logo d'openClassRoom](img/oc.jpeg){width="200"}
+
+## **NOTE PERSONNELLE ci-dessous**
+
+## Traduction
+
+**Introduction**
+
+Ceci est un **paragraphe** d'introduction pour prendre en main *Quarto*.
+
+L'avantage de *Quarto* est de permettre une meilleure ***reprodutibilité***, ***réutilisation***, et ***transmission*** du code `R` dans `RStudios`.
+
+**Quarto**
+
+Quarto vous permet d’entrelacer du contenu et du code exécutable dans un document finalisé. Pour en savoir plus sur Quarto, consultez https://quarto.org .
+
+Explication de quelques mots:\
+enables you to → vous permet de\
+to weave together → entrelacer / combiner\
+content → contenu (texte, explications, images…)\
+executable code → code exécutable (du code qui peut être lancé)\
+finished document → document finalisé\
+Sens global de la phrase :\
+Quarto sert à mélanger texte + code + résultats dans un même document, ce qui est très utilisé en data science pour produire des rapports reproductibles.
+
+**Running Code**
+
+Lorsque vous cliquez sur le bouton Render, un document est généré. Celui-ci inclut à la fois le contenu et les résultats du code intégré. Vous pouvez intégrer du code comme ceci :
+
+Explication de quelques mots:\
+When you click Lorsque vous cliquez\
+Render compiler / générer le document\
+output résultat / sortie\
+embedded code code intégré embed intégrer / insérer
+
+Sens dans Quarto:\
+Quand tu cliques sur Render, Quarto :\
+1_exécute le code R\
+2_récupère les résultats\
+3_génère un document final (HTML, PDF, etc.) avec : le texte, le code, les résultats du code.
+
+L’option echo: false désactive l’affichage du code (seul le résultat est affiché).
+
+Explication rapide :\
+echo → afficher le code\
+false → ne pas afficher\
+output → résultat / sortie
+
+## Nouveau chunk
+
+(raccourci avec Ctrl + Alt + I)
+
+Pour utiiser Python, installer le package dans la console:\
+install.packages("reticulate")
+
+```{python}
+print("hello")
+```
+
+AUtres chunk ou bloc de code avec un objet a
+
+```{r}
+a <- 2
+a * 2
+```
+
+## Liens utiles
+
+[Documentation Quarto: Markdown Basics](https://quarto.org/docs/authoring/markdown-basics){target="_blanck"}
