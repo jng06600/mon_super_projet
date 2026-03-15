@@ -67,14 +67,14 @@ Il est recommandé d’enregistrer régulièrement ses fichiers afin d’éviter
 
 R is **case-sensitive**, which means that `a` and `A` are considered two different objects.
 
-For example:  
-\`\`\`{r}  
-a \<- 2  
+For example:\
+\`\`\`{r}\
+a \<- 2\
 a \* 2
 
 This works because the object a exists.
 
-However, if we try:  
+However, if we try:\
 A \* 2
 
 R will return an error because A is not defined.
@@ -85,8 +85,8 @@ A good practice is therefore to use lowercase variable names and the snake_case 
 
 In Quarto, it is possible to hide the code and display only the results using the echo: false option.
 
-#\| echo: false  
-2 / 2  
+#\| echo: false \
+2 / 2\
 10 \* 10
 
 The echo: false option disables the printing of code (only output is displayed).
@@ -97,24 +97,23 @@ The echo: false option disables the printing of code (only output is displayed).
 
 R est sensible à la casse, ce qui signifie que a et A sont deux objets différents.
 
-Par exemple :  
-a \<- 2  
+Par exemple :\
+a \<- 2\
 a \* 2
 
 Ce code fonctionne car l’objet a existe.
 
-En revanche, si l’on écrit : A \* 2  
+En revanche, si l’on écrit : A \* 2\
 R renverra une erreur car l’objet A n’est pas défini.
 
 La bonne pratique consiste donc à utiliser des noms de variables en minuscules et la convention snake_case.
-
 
 **Exemple : masquer le code**
 
 Dans Quarto, il est possible de masquer le code et d’afficher uniquement le résultat en utilisant l’option echo: false.
 
-#\| echo: false  
-2 / 2 
+#\| echo: false\
+2 / 2\
 10 \* 10
 
 L’option echo: false désactive l’affichage du code et montre uniquement le résultat.
