@@ -5,27 +5,120 @@ format:
   html:
     toc: true
     theme: cosmo
-    number-sections: true
 editor: visual
 ---
 
-## Quarto
+## Introduction
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+This document presents a short guide to **best practices when working with R, RStudio and Quarto**.
 
-## Running Code
+The objective is to build **clear, reproducible and well-structured data analysis workflows**.
 
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+<details>
 
-```{r}
-1 + 1
-```
+<summary>Traduction</summary>
 
-You can add options to executable code like this
+Ce document présente un guide des **bonnes pratiques pour travailler avec R, RStudio et Quarto**.
 
-```{r}
-#| echo: false
-2 * 2
-```
+L'objectif est de produire des analyses de données **claires, reproductibles et bien structurées**.
 
-The `echo: false` option disables the printing of code (only output is displayed).
+</details>
+
+## Conseil n°1 : Do not save data in `.RData`
+
+It is not recommended to automatically save the workspace in a `.RData` file when closing an R session.\
+A better practice is to **re-run scripts each time you start a new session** to ensure reproducibility.
+
+<details>
+
+<summary>Traduction</summary>
+
+Il est déconseillé d’enregistrer automatiquement les données dans un fichier `.RData` à la fermeture d’une session R.
+
+La bonne pratique consiste à **relancer les scripts à chaque ouverture de RStudio** afin de garantir la reproductibilité du travail.
+
+</details>
+
+## Conseil n°3 : Use Git for version control
+
+Using **Git** allows you to track changes in your code, maintain a clear project history and collaborate more efficiently.
+
+<details>
+
+<summary>Traduction</summary>
+
+L’utilisation de **Git** permet de suivre les modifications du code, de conserver un historique du projet et de faciliter la collaboration.
+
+</details>
+
+## Conseil n°4 : Save your work regularly
+
+Saving your files frequently helps prevent the loss of work in case of unexpected problems or session crashes.
+
+<details>
+
+<summary>Traduction</summary>
+
+Il est recommandé d’enregistrer régulièrement ses fichiers afin d’éviter la perte de travail en cas de problème ou de fermeture inattendue.
+
+</details>
+
+## Conseil n°5 : Pay attention to case sensitivity
+
+R is **case-sensitive**, which means that `a` and `A` are considered two different objects.
+
+For example:  
+\`\`\`{r}  
+a \<- 2  
+a \* 2
+
+This works because the object a exists.
+
+However, if we try:  
+A \* 2
+
+R will return an error because A is not defined.
+
+A good practice is therefore to use lowercase variable names and the snake_case naming convention.
+
+**Example: hiding code in the output**
+
+In Quarto, it is possible to hide the code and display only the results using the echo: false option.
+
+#\| echo: false  
+2 / 2  
+10 \* 10
+
+The echo: false option disables the printing of code (only output is displayed).
+
+<details>
+
+<summary>Traduction</summary>
+
+R est sensible à la casse, ce qui signifie que a et A sont deux objets différents.
+
+Par exemple :  
+a \<- 2  
+a \* 2
+
+Ce code fonctionne car l’objet a existe.
+
+En revanche, si l’on écrit : A \* 2  
+R renverra une erreur car l’objet A n’est pas défini.
+
+La bonne pratique consiste donc à utiliser des noms de variables en minuscules et la convention snake_case.
+
+
+**Exemple : masquer le code**
+
+Dans Quarto, il est possible de masquer le code et d’afficher uniquement le résultat en utilisant l’option echo: false.
+
+#\| echo: false  
+2 / 2 
+10 \* 10
+
+L’option echo: false désactive l’affichage du code et montre uniquement le résultat.
+
+</details>
+
+\`\`\`
