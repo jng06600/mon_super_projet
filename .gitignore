@@ -5,7 +5,6 @@
 .quarto/
 *_files/
 *.log
-*.html
 _site/
 
 /.quarto/
