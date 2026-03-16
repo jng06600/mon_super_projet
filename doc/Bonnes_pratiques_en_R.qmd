@@ -39,6 +39,36 @@ La bonne pratique consiste à **relancer les scripts à chaque ouverture de RStu
 
 </details>
 
+## Conseil n°2 : Keep R, RStudio and packages up to date
+
+It is important to keep **R, RStudio and installed packages updated** in order to avoid compatibility issues and benefit from improvements and bug fixes.
+
+Packages can be updated directly from RStudio using the **Packages tab** or with the following command:
+
+```{r}
+#| eval: false
+update.packages()
+```
+
+Keeping your tools up to date helps ensure that your code remains reproducible, stable and secure.
+
+<details>
+
+<summary>Traduction</summary>
+
+Il est important de maintenir R, RStudio et les packages à jour afin d’éviter les problèmes de compatibilité et de bénéficier des améliorations et corrections de bugs.
+
+Les packages peuvent être mis à jour directement dans RStudio via l’onglet Packages ou avec la commande :
+
+```{r}
+#| eval: false
+update.packages()
+```
+
+Maintenir ses outils à jour permet de garantir un code reproductible, stable et sécurisé.
+
+</details>
+
 ## Conseil n°3 : Use Git for version control
 
 Using **Git** allows you to track changes in your code, maintain a clear project history and collaborate more efficiently.
