@@ -1,0 +1,35 @@
+---
+title: "R / Quarto Learning Project"
+author: "John NG"
+format:
+  html:
+    theme: cosmo
+    toc: true
+editor: visual
+---
+
+---
+title: "R / Quarto Learning Project"
+format:
+  html:
+    theme: cosmo
+    toc: true
+---
+
+# Welcome
+
+This website presents my learning work with **R**, **RStudio**, **Quarto**, **Git**, and **GitHub**.
+
+The goal of this project is to learn how to build **reproducible and well-documented data analysis workflows**.
+
+## Main document
+
+-   [Guide des bonnes pratiques en R](docs/Bonnes_pratiques_en_R.qmd)
+
+## Technologies used
+
+-   R
+-   RStudio
+-   Quarto
+-   Git
+-   GitHub

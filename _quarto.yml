@@ -1,12 +1,15 @@
 project:
   type: website
+  output-dir: docs
 
 website:
   title: "R / Quarto Learning Project"
   navbar:
     left:
-      - href: doc/Bonnes_pratiques_en_R.qmd
-        text: Guide des bonnes pratiques
+      - href: index.qmd
+        text: Home
+      - href: Bonnes_pratiques_en_R.qmd
+        text: Guide
 
 format:
   html:
