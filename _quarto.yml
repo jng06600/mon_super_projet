@@ -1,0 +1,14 @@
+project:
+  type: website
+
+website:
+  title: "R / Quarto Learning Project"
+  navbar:
+    left:
+      - href: doc/Bonnes_pratiques_en_R.qmd
+        text: Guide des bonnes pratiques
+
+format:
+  html:
+    theme: cosmo
+    toc: true

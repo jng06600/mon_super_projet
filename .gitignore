@@ -6,3 +6,7 @@
 *_files/
 *.log
 *.html
+_site/
+
+/.quarto/
+**/*.quarto_ipynb
