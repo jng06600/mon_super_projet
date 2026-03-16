@@ -22,7 +22,12 @@ By combining **code, documentation and version control**, this project demonstra
 
 ## Project structure
 
-Mon_super_projet │ ├── 📄 doc → Quarto documents and reports ├── 🖼 img → images used in reports ├── 📊 data → datasets ├── ⚙️ scripts → additional scripts
+Mon_super_projet  
+│  
+├── 📄 doc → Quarto documents and reports  
+├── 🖼 img → images used in reports  
+├── 📊 data → datasets  
+├── ⚙️ scripts → additional scripts
 
 Each Quarto document mixes **text, executable code and results**, making analyses easier to understand, reproduce and share.
 
