@@ -1,17 +1,73 @@
-# R Quarto Learning Project
+# R / Quarto Learning Project
 
-This repository contains exercises from the OpenClassrooms course on **R, RStudio and Quarto**.
+This repository contains exercises and notes from the **OpenClassrooms course on R, RStudio and Quarto**.
 
-The goal is to learn how to build reproducible data analysis workflows using **Quarto**, **R**, and **Git**.
+The goal of this project is to learn how to build **reproducible, well-structured and documented data analysis workflows** using modern tools such as:
+
+-   **R**
+-   **RStudio**
+-   **Quarto**
+-   **Git & GitHub**
+-   **Markdown**
+
+By combining **code, documentation and version control**, this project demonstrates the foundations of a professional data science workflow.
+
+------------------------------------------------------------------------
 
 ## Project structure
 
-- `doc/` : Quarto reports
-- `img/` : images used in the reports
-- `data/` : datasets
-- `scripts/` : R scripts
+Mon_super_projet │ ├── doc → Quarto documents and reports ├── img → images used in reports ├── data → datasets ├── scripts → additional scripts
+
+Each Quarto document mixes **text, executable code and results**, making analyses easier to understand, reproduce and share.
+
+------------------------------------------------------------------------
+
+## Example document
+
+One of the main documents in this repository is:\
+doc/Bonnes_pratiques_en_R.qmd
+
+This guide summarizes key **best practices for working with R**, including:
+
+-   working with **RStudio projects**
+-   keeping **R and packages updated**
+-   using **Git for version control**
+-   saving work regularly
+-   understanding **case sensitivity in R**
+
+The document also demonstrates several Quarto features:
+
+-   executable code blocks
+-   hidden code with `echo: false`
+-   automatic table of contents
+-   collapsible translations (English / French)
+
+------------------------------------------------------------------------
+
+## Why this project?
+
+The objective is to build a **clear and reproducible workflow** for data analysis projects.
+
+Using tools like **Quarto and Git** allows:
+
+-   better documentation of analyses
+-   easier collaboration
+-   reproducible research
+-   well-structured projects
+
+------------------------------------------------------------------------
+
+## Technologies used
+
+-   R
+-   RStudio
+-   Quarto
+-   Markdown
+-   Git
+-   GitHub
+
+------------------------------------------------------------------------
 
 ## Author
 
-John NG
-
+**John NG**
