@@ -1,5 +1,5 @@
 ---
-title: "Bonnes_pratiques"
+title: "Bonnes_pratiques_en_R"
 author: "John NG"
 format:
   html:
@@ -24,6 +24,7 @@ L'objectif est de produire des analyses de données **claires, reproductibles et
 
 </details>
 
+::: callout-tip
 ## Conseil n°1 : Do not save data in `.RData`
 
 It is not recommended to automatically save the workspace in a `.RData` file when closing an R session.\
@@ -38,7 +39,9 @@ Il est déconseillé d’enregistrer automatiquement les données dans un fichie
 La bonne pratique consiste à **relancer les scripts à chaque ouverture de RStudio** afin de garantir la reproductibilité du travail.
 
 </details>
+:::
 
+::: callout-tip
 ## Conseil n°2 : Keep R, RStudio and packages up to date
 
 It is important to keep **R, RStudio and installed packages updated** in order to avoid compatibility issues and benefit from improvements and bug fixes.
@@ -60,15 +63,14 @@ Il est important de maintenir R, RStudio et les packages à jour afin d’évite
 
 Les packages peuvent être mis à jour directement dans RStudio via l’onglet Packages ou avec la commande :
 
-```{r}
-#| eval: false
 update.packages()
-```
 
 Maintenir ses outils à jour permet de garantir un code reproductible, stable et sécurisé.
 
 </details>
+:::
 
+::: callout-tip
 ## Conseil n°3 : Use Git for version control
 
 Using **Git** allows you to track changes in your code, maintain a clear project history and collaborate more efficiently.
@@ -80,7 +82,9 @@ Using **Git** allows you to track changes in your code, maintain a clear project
 L’utilisation de **Git** permet de suivre les modifications du code, de conserver un historique du projet et de faciliter la collaboration.
 
 </details>
+:::
 
+::: callout-tip
 ## Conseil n°4 : Save your work regularly
 
 Saving your files frequently helps prevent the loss of work in case of unexpected problems or session crashes.
@@ -92,7 +96,9 @@ Saving your files frequently helps prevent the loss of work in case of unexpecte
 Il est recommandé d’enregistrer régulièrement ses fichiers afin d’éviter la perte de travail en cas de problème ou de fermeture inattendue.
 
 </details>
+:::
 
+::: callout-tip
 ## Conseil n°5 : Pay attention to case sensitivity
 
 R is **case-sensitive**, which means that `a` and `A` are considered two different objects.
@@ -151,3 +157,4 @@ L’option echo: false désactive l’affichage du code et montre uniquement le 
 </details>
 
 \`\`\`
+:::

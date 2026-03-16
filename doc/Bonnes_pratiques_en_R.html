@@ -8,7 +8,7 @@
 
 <meta name="author" content="John NG">
 
-<title>Bonnes_pratiques</title>
+<title>Bonnes_pratiques_en_R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -84,11 +84,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#conseil-n1-do-not-save-data-in-.rdata" id="toc-conseil-n1-do-not-save-data-in-.rdata" class="nav-link" data-scroll-target="#conseil-n1-do-not-save-data-in-.rdata">Conseil n°1 : Do not save data in <code>.RData</code></a></li>
-  <li><a href="#conseil-n2-keep-r-rstudio-and-packages-up-to-date" id="toc-conseil-n2-keep-r-rstudio-and-packages-up-to-date" class="nav-link" data-scroll-target="#conseil-n2-keep-r-rstudio-and-packages-up-to-date">Conseil n°2 : Keep R, RStudio and packages up to date</a></li>
-  <li><a href="#conseil-n3-use-git-for-version-control" id="toc-conseil-n3-use-git-for-version-control" class="nav-link" data-scroll-target="#conseil-n3-use-git-for-version-control">Conseil n°3 : Use Git for version control</a></li>
-  <li><a href="#conseil-n4-save-your-work-regularly" id="toc-conseil-n4-save-your-work-regularly" class="nav-link" data-scroll-target="#conseil-n4-save-your-work-regularly">Conseil n°4 : Save your work regularly</a></li>
-  <li><a href="#conseil-n5-pay-attention-to-case-sensitivity" id="toc-conseil-n5-pay-attention-to-case-sensitivity" class="nav-link" data-scroll-target="#conseil-n5-pay-attention-to-case-sensitivity">Conseil n°5 : Pay attention to case sensitivity</a></li>
   </ul>
 </nav>
 </div>
@@ -96,7 +91,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Bonnes_pratiques</h1>
+<h1 class="title">Bonnes_pratiques_en_R</h1>
 </div>
 
 
@@ -130,9 +125,16 @@ Traduction
 <p>Ce document présente un guide des <strong>bonnes pratiques pour travailler avec R, RStudio et Quarto</strong>.</p>
 <p>L’objectif est de produire des analyses de données <strong>claires, reproductibles et bien structurées</strong>.</p>
 </details>
-</section>
-<section id="conseil-n1-do-not-save-data-in-.rdata" class="level2">
-<h2 class="anchored" data-anchor-id="conseil-n1-do-not-save-data-in-.rdata">Conseil n°1 : Do not save data in <code>.RData</code></h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Conseil n°1 : Do not save data in <code>.RData</code>
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>It is not recommended to automatically save the workspace in a <code>.RData</code> file when closing an R session.<br>
 A better practice is to <strong>re-run scripts each time you start a new session</strong> to ensure reproducibility.</p>
 <details>
@@ -142,9 +144,18 @@ Traduction
 <p>Il est déconseillé d’enregistrer automatiquement les données dans un fichier <code>.RData</code> à la fermeture d’une session R.</p>
 <p>La bonne pratique consiste à <strong>relancer les scripts à chaque ouverture de RStudio</strong> afin de garantir la reproductibilité du travail.</p>
 </details>
-</section>
-<section id="conseil-n2-keep-r-rstudio-and-packages-up-to-date" class="level2">
-<h2 class="anchored" data-anchor-id="conseil-n2-keep-r-rstudio-and-packages-up-to-date">Conseil n°2 : Keep R, RStudio and packages up to date</h2>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Conseil n°2 : Keep R, RStudio and packages up to date
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>It is important to keep <strong>R, RStudio and installed packages updated</strong> in order to avoid compatibility issues and benefit from improvements and bug fixes.</p>
 <p>Packages can be updated directly from RStudio using the <strong>Packages tab</strong> or with the following command:</p>
 <div class="cell">
@@ -157,14 +168,21 @@ Traduction
 </summary>
 <p>Il est important de maintenir R, RStudio et les packages à jour afin d’éviter les problèmes de compatibilité et de bénéficier des améliorations et corrections de bugs.</p>
 <p>Les packages peuvent être mis à jour directement dans RStudio via l’onglet Packages ou avec la commande :</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">update.packages</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
+<p>update.packages()</p>
 <p>Maintenir ses outils à jour permet de garantir un code reproductible, stable et sécurisé.</p>
 </details>
-</section>
-<section id="conseil-n3-use-git-for-version-control" class="level2">
-<h2 class="anchored" data-anchor-id="conseil-n3-use-git-for-version-control">Conseil n°3 : Use Git for version control</h2>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Conseil n°3 : Use Git for version control
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>Using <strong>Git</strong> allows you to track changes in your code, maintain a clear project history and collaborate more efficiently.</p>
 <details>
 <summary>
@@ -172,9 +190,18 @@ Traduction
 </summary>
 <p>L’utilisation de <strong>Git</strong> permet de suivre les modifications du code, de conserver un historique du projet et de faciliter la collaboration.</p>
 </details>
-</section>
-<section id="conseil-n4-save-your-work-regularly" class="level2">
-<h2 class="anchored" data-anchor-id="conseil-n4-save-your-work-regularly">Conseil n°4 : Save your work regularly</h2>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Conseil n°4 : Save your work regularly
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>Saving your files frequently helps prevent the loss of work in case of unexpected problems or session crashes.</p>
 <details>
 <summary>
@@ -182,9 +209,18 @@ Traduction
 </summary>
 <p>Il est recommandé d’enregistrer régulièrement ses fichiers afin d’éviter la perte de travail en cas de problème ou de fermeture inattendue.</p>
 </details>
-</section>
-<section id="conseil-n5-pay-attention-to-case-sensitivity" class="level2">
-<h2 class="anchored" data-anchor-id="conseil-n5-pay-attention-to-case-sensitivity">Conseil n°5 : Pay attention to case sensitivity</h2>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Conseil n°5 : Pay attention to case sensitivity
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>R is <strong>case-sensitive</strong>, which means that <code>a</code> and <code>A</code> are considered two different objects.</p>
 <p>For example:<br>
 ```{r}<br>
@@ -221,6 +257,8 @@ R renverra une erreur car l’objet A n’est pas défini.</p>
 <p>L’option echo: false désactive l’affichage du code et montre uniquement le résultat.</p>
 </details>
 <p>```</p>
+</div>
+</div>
 </section>
 
 </main>
